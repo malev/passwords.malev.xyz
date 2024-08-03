@@ -1,0 +1,22 @@
+ul {
+  list-style-type: none;
+  /* Remove bullet points */
+  padding-bottom: 1em;
+  /* Remove default padding */
+  margin: 0;
+  /* Remove default margin */
+}
+
+li {
+  padding: 5px 0;
+  /* Add some padding to make the list items taller */
+  margin: 0;
+  /* Remove default margin */
+  /* Optional: add a bottom border for separation */
+  /* Use a clean, modern font */
+  /* Adjust font size */
+  line-height: 1.5;
+  /* Increase line height for better readability */
+  list-style: none !important;
+  font-family: "Ubuntu", monospace;
+}
