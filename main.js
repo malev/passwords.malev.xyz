@@ -1,4 +1,5 @@
-import "./style.css";
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 import words from "./words.json" assert { type: "json" };
 
 function generatePassword(length) {
@@ -69,3 +70,16 @@ document.querySelector("#generator").innerHTML = `
 `;
 
 setupPassword(document.querySelector("#generate"));
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBrnb6J9kQeKDTgaycuRkohDQb-kjYFmMw",
+  authDomain: "passwords-malev-xyz.firebaseapp.com",
+  projectId: "passwords-malev-xyz",
+  storageBucket: "passwords-malev-xyz.appspot.com",
+  messagingSenderId: "307008882560",
+  appId: "1:307008882560:web:98b2f32c0efb1249f9e365",
+  measurementId: "G-PVL440BDPW",
+};
+
+const app = initializeApp(firebaseConfig);
+getAnalytics(app);
